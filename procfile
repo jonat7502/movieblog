@@ -1,0 +1,1 @@
+web: gunicorn cult_movie_blog.wsgi:application

@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+import dj_database_url
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -85,12 +86,15 @@ WSGI_APPLICATION = 'cult_movie_blog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+       # 'ENGINE': 'django.db.backends.sqlite3',
+       # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+CLEARDB_DATABASE_URL = os.environ.get("CLEARDB_DATABASE_URL", "")
+DATABASES ['default'] = dj_database_url.parse(CLEARDB_DATABASE_URL)
 
 
 # Password validation
