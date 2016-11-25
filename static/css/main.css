@@ -1,0 +1,117 @@
+.page-scroll:link {
+    color: white;
+    background-color: black;
+}
+.page-scroll:hover {
+
+}
+.page-scroll {
+    color: white;
+    background-color: black;
+
+
+    margin-left: 50px;
+    margin-right: 50px;
+}
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  background-color: white;
+  padding-top: 100px;
+}
+#div1{
+    background-color: black;
+    color: white;
+}
+
+#mainNav {
+    background-color: white;
+    color: black;
+    display: inline-block;
+
+}
+#div2 {
+    background-color: white;
+    color: black;
+}
+#store {
+
+    background-color: white;
+    color: black;
+
+}
+
+#footer {
+    background-color: black;
+    color: white;
+}
+#below {
+    background-color: white;
+    color: black;
+}
+
+.page-scroll:hover{
+    display: inline-block;
+    color: white;
+    background-color: black;
+}
+#database {
+    color: black;
+}
+
+a.effect1 {
+ box-sizing: border-box;
+ position: relative;
+ overflow: hidden;
+ display: inline-block;
+ color: white;
+ text-decoration: none;
+ margin: 30px;
+ width: 250px;
+ height: 100px;
+ border: 3px solid;
+ font-family: Roboto, sans-serif;
+ font-size: 2em;
+}
+a.effect1:after {
+    box-sizing: border-box;
+    position: absolute;
+    text-align: center;
+width: 100%;
+ line-height: 100px;
+ content: 'effect one';
+
+ -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+a.effect1:before {
+ box-sizing: border-box;
+ content: '';
+ position: absolute;
+ top: 100%;
+ width: 100%;
+ height: 100%;
+ background: white;
+
+ -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+a.effect1:hover:before {
+ top: 0;
+}
+a.effect1:hover:after {
+    color: black;
+}
+#ticket {
+    align-items: center;
+    float: right;
+}
+header img {
+    display: inline-block;
+}
+.data {
+    color: white;
+}
+#blog {
+    color: white;
+}
