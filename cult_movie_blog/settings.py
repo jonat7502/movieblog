@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'django_forms_bootstrap',
     'django_gravatar',
     'paypal_store'
+
 ]
 
 MIDDLEWARE = [
