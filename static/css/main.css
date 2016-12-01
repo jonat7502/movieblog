@@ -115,3 +115,6 @@ header img {
 #blog {
     color: white;
 }
+#pics {
+    display: block;
+}
