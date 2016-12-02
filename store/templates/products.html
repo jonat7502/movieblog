@@ -14,7 +14,7 @@
             {% for product in products %}
                 <tr>
                     <td>{{ product.name }}</td>
-                    <td><img src=" /media/{{product.image}}"></td>
+                    <td><img src=" {{ MEDIA_URL }}{{product.image}}"></td>
                     <td>{{ product.description }}</td>
                     <td>${{ product.price }}</td>
                     <td>{{ product.paypal_form.sandbox }}</td>
